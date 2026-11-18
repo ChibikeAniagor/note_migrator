@@ -1,0 +1,36 @@
+name: note_migrator
+description: Move notes between Google Keep and Mi Notes on this phone.
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.13.3
+
+dependencies:
+  flutter:
+    sdk: flutter
+  archive: ^4.0.7
+  file_picker: ^13.3.3
+  flutter_riverpod: ^2.6.1
+  html: ^0.15.6
+  path_provider: ^2.1.5
+  shared_preferences: ^2.5.3
+  share_plus: ^13.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter_launcher_icons:
+  android: ic_launcher
+  ios: true
+  image_path: assets/icon/app_icon.png
+  adaptive_icon_background: "#F4E4CC"
+  adaptive_icon_foreground: assets/icon/app_icon.png
+  remove_alpha_ios: true
+  min_sdk_android: 24
+
+flutter:
+  uses-material-design: true
